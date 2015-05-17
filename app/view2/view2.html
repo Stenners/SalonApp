@@ -1,0 +1,22 @@
+<div class="col-xs-12">
+    <div class="row">
+        <h1>Appointments</h1>
+        <div class="alert alert-info col-sm-3 col-md-1 text-center" ng-repeat="appointment in appointments">
+            <p>{{ appointment.date }}
+                <br /> {{ appointment.client }}
+                <br /> {{ appointment.hairdresser }}</p>
+        </div>
+    </div>
+    <div ng-controller="newAppointmentCtrl">
+        <form novalidate class="simple-form">
+            Name:
+            <input type="text" ng-model="appointment.client" />
+            <br />Date:
+            <input type="text" ng-model="appointment.date" />
+            <br />Hairdresser:
+            <input type="text" ng-model="appointment.hairdresser" />
+            <br />
+            <input type="submit" ng-click="update(appointment)" value="Save" />
+        </form>
+    </div>
+</div>
