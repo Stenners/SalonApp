@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
     <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/flatly/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css"/>
     <link rel="stylesheet" href="app.css">
     <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
@@ -55,7 +56,7 @@
         </nav>
     </div>
     <div id="wrapper">
-        <div id="sidebar-wrapper" class="col-md-1">
+        <div id="sidebar-wrapper" class="col-md-2 col-lg-1">
             <div id="sidebar">
                 <ul class="nav list-group">
                     <li>
@@ -64,10 +65,13 @@
                     <li>
                         <a class="list-group-item" href="#/view2"><i class="icon-home icon-1x"></i>View 2</a>
                     </li>
+                    <li>
+                        <a class="list-group-item" href="#/view3"><i class="icon-home icon-1x"></i>View 3</a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div id="main-wrapper" class="col-md-11 pull-right">
+        <div id="main-wrapper" class="col-md-10 col-lg-11 pull-right">
             <div id="main" ng-view>
             </div>
         </div>
@@ -75,13 +79,19 @@
     <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/moment/moment.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="https://cdn.firebase.com/js/client/1.1.1/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+    <script type="text/javascript" src="bower_components/fullcalendar/dist/fullcalendar.js"></script>
+    <script type="text/javascript" src="bower_components/fullcalendar/dist/gcal.js"></script>
     <script src="app.js"></script>
     <script src="view1/view1.js"></script>
     <script src="view2/view2.js"></script>
+    <script src="view3/view3.js"></script>
     <script src="components/version/version.js"></script>
     <script src="components/version/version-directive.js"></script>
     <script src="components/version/interpolate-filter.js"></script>
