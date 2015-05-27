@@ -27,6 +27,7 @@ body {
     padding-top: 50px;
     overflow: hidden;
     background-color: #f6f8f8;
+    font-family: 'Source Sans Pro', Sans-serif;
 }
 #wrapper {
     min-height: 100%;
@@ -66,7 +67,12 @@ body {
     border-left: 0;
     border-right: 0;
     border-top: 0;
+    background-color: transparent;
+    border-color: transparent;
+    color: #b4b6bd;
+    font-weight: 800;
 }
+
 @media (max-width: 992px) {
     body {
         padding-top: 0px;
@@ -89,4 +95,12 @@ body {
         max-height: 300px;
         border-right: 0;
     }
+}
+
+.btn-addon.btn-lg i {
+  width: 45px;
+  height: 45px;
+  margin: -11px -16px;
+  margin-right: 16px;
+  line-height: 45px;
 }

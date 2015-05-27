@@ -14,8 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
     <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/flatly/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/flatly/bootstrap.min.css" rel="stylesheet"> -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css"/>
+    <link rel="stylesheet" href="css/fullcalendar.theme.css"/>
     <link rel="stylesheet" href="app.css">
     <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
@@ -60,13 +64,10 @@
             <div id="sidebar">
                 <ul class="nav list-group">
                     <li>
-                        <a class="list-group-item" href="#/view1"><i class="icon-home icon-1x"></i>View 1</a>
+                        <a class="list-group-item" href="#/appointments"><i class="glyphicon glyphicon-calendar icon text-info-dker"></i>Appointments</a>
                     </li>
                     <li>
-                        <a class="list-group-item" href="#/view2"><i class="icon-home icon-1x"></i>View 2</a>
-                    </li>
-                    <li>
-                        <a class="list-group-item" href="#/view3"><i class="icon-home icon-1x"></i>View 3</a>
+                        <a class="list-group-item" href="#/clients"><i class="icon-user icon text-success-lter"></i>Clients</a>
                     </li>
                 </ul>
             </div>
@@ -83,15 +84,16 @@
     <script type="text/javascript" src="bower_components/moment/moment.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="https://cdn.firebase.com/js/client/1.1.1/firebase.js"></script>
-    <script src="https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-ui-calendar/src/calendar.js"></script>
     <script type="text/javascript" src="bower_components/fullcalendar/dist/fullcalendar.js"></script>
     <script type="text/javascript" src="bower_components/fullcalendar/dist/gcal.js"></script>
+    <script src="https://cdn.firebase.com/js/client/1.1.1/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="app.js"></script>
-    <script src="view1/view1.js"></script>
-    <script src="view2/view2.js"></script>
-    <script src="view3/view3.js"></script>
+    <script src="appointments/appointments.js"></script>
+    <script src="clients/clients.js"></script>
     <script src="components/version/version.js"></script>
     <script src="components/version/version-directive.js"></script>
     <script src="components/version/interpolate-filter.js"></script>
